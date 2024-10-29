@@ -4,18 +4,14 @@
 ```bash
 $ cd source_folder
 $ zig build test --summary all # if all Ok, go next step.
-$ zig build --summary all
+$ zig build --summary all --prefix-exe-dir /you/customs/bin/folder
 ```
-
-The executable is generated in zig-out folder and need to move to .local folder.
-```bash
-$ mv zig-out/bin/my_exe ~/.local/zig-bin/
-```
+> **Note:** Recomend you create a folder in ~/.local/ for you customs bins.
 
 Add to Path.
 ```bash
 # Add this line at your bash config file (.profile, .bashrc..etc).
-export PATH="$PATH:$HOME/.local/zig-bin"
+export PATH="$PATH:$HOME:/you/customs/bin/folder"
 ```
 
 Reload conf
