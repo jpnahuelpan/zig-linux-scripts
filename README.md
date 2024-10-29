@@ -11,11 +11,11 @@ $ zig build --summary all --prefix-exe-dir /you/customs/bin/folder
 Add to Path.
 ```bash
 # Add this line at your bash config file (.profile, .bashrc..etc).
-export PATH="$PATH:$HOME:/you/customs/bin/folder"
+export PATH="$PATH:/you/customs/bin/folder"
 ```
 
 Reload conf
 ```bash
-source .bashrc
+source .bashrc .profile # .. wherever you use as config file.
 ```
 
